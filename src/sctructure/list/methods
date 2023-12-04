@@ -1,0 +1,20 @@
+ method:
+- add
+- remove
+- get
+- size
+- set
+
+- addAll
+- retainAll
+- removeAll
+
+- clear
+
+- contains
+- containsAll
+
+- indexOf
+- lastIndexOf
+
+- sublist
