@@ -43,5 +43,6 @@ public class Console {
             System.out.println("Введіть ключове слово: ");
             key = scanner.nextLine();
         }
+        scanner.close();
     }
 }

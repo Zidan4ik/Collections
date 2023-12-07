@@ -1,12 +1,10 @@
-package task.task1;
+package task.task3;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Console {
     public void doConsole() {
-        List<String> gos_number = new ArrayList<>();
+        Set<String> gos_number = new HashSet<>();
         Scanner scanner = new Scanner(System.in);
 
         String num = "";
@@ -32,4 +30,3 @@ public class Console {
         scanner.close();
     }
 }
-
