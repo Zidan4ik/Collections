@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ImmutableExm1 {
     public static void main(String[] args) {
+        //collection mutable
         List array = new ArrayList<>();
         array.add("Roma");
         array.add("Dima");
@@ -13,9 +14,10 @@ public class ImmutableExm1 {
         array.add("Vasya");
 
 
+        //collection immutable
         List immutableArray = Collections.unmodifiableList(array);
-
         array.add("Ruslan");
+//        immutableArray.add("Grisha");
         System.out.println("Before: "+array);
         System.out.println("After: "+immutableArray);
     }

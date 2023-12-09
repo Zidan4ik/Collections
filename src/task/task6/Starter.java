@@ -17,6 +17,7 @@ public class Starter {
         collection.add(new Person(1, "Roma", "Pravnyk", 19));
         collection.add(new Person(6, "Dasha", "Levina", 18));
         collection.add(new Person(3, "Andriy", "Ivanchuk", 20));
+
         System.out.println("\nДо сортування: ");
         for (Person p : collection) {
             System.out.println(p);
@@ -26,11 +27,11 @@ public class Starter {
         for (Person p : collection) {
             System.out.println(p);
         }
-        System.out.println("\nПісля сортування Comparable: ");
-        Collections.sort(collection);
-        for (Person p : collection) {
-            System.out.println(p);
-        }
+//        System.out.println("\nПісля сортування Comparable: ");
+//        Collections.sort(collection);
+//        for (Person p : collection) {
+//            System.out.println(p);
+//        }
 
 
     }

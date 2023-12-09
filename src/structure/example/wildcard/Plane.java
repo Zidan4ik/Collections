@@ -1,13 +1,13 @@
 package structure.example.wildcard;
 
-public class Plane extends Transport{
-    private String type;
+public class Plane extends Transport {
 
     public Plane(String type) {
-        this.type = type;
+        super(type);
     }
 
-    public void act(){
-        System.out.println(type+" летить у повітрі");
+    @Override
+    public void act() {
+        System.out.println(type + " летить у повітрі");
     }
 }

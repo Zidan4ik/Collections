@@ -18,7 +18,7 @@ public class WorkTimeCollections {
 //        System.out.println("час виконання arraylist: "+addElements(arraylist)+ " секунд");
 //        System.out.println("час виконання linkedlist: "+addElements(linkedlist)+ " секунд");
 //        System.out.println();
-///*---------------------------------------*/
+/*---------------------------------------*/
 //
 // method add on some position
 //        System.out.println("\nfunctional add on index");
@@ -27,7 +27,7 @@ public class WorkTimeCollections {
 ///*---------------------------------------*/
 
 // method get last element
-//        System.out.println("functional get last element");
+        System.out.println("functional get last element");
 //        System.out.println("час виконання arraylist: "+getElementById(arraylist,1_000_000)+ " мілісекунд");
 //        System.out.println("час виконання linkedlist: "+getElementById(linkedlist,1_000_000)+ " мілісекунд");
 ///*---------------------------------------*/
@@ -44,7 +44,7 @@ public class WorkTimeCollections {
 //        System.out.println("час виконання arraylist: "+removeElements(arraylist,1_000_000)+ " мілісекунд");
 //        System.out.println("час виконання linkedlist: "+removeElements(linkedlist,1_000_000)+ " мілісекунд");
         /*---------------------------------------*/
-// method remove last element
+// method remove first half element
 //        System.out.println("functional remove some first half element");
 //        System.out.println("час виконання arraylist: "+getElementById(arraylist,200_000)+ " мілісекунд");
 //        System.out.println("час виконання linkedlist: "+getElementById(linkedlist,200_000)+ " мілісекунд");

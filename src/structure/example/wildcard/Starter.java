@@ -5,23 +5,23 @@ import java.util.List;
 
 public class Starter {
     public static void main(String[] args) {
-        List<Transport> arrayTransport = new ArrayList<>();
-        arrayTransport.add(new Plane("plane1"));
-        arrayTransport.add(new Plane("plane2"));
-        arrayTransport.add(new Car("car1"));
-        arrayTransport.add(new Car("car2"));
+        List<? super Transport> arrayTransport1 = new ArrayList<>();
+        List<? extends Transport> arrayTransport2 = new ArrayList<>();
 
-        showDoTransport(arrayTransport);
+        arrayTransport1.add(new Plane("plane1"));
+        arrayTransport1.add(new Plane("plane2"));
+        arrayTransport1.add(new Car("car1"));
+//        arrayTransport2.add(new Car("car2"));
+
+        showDoTransport(arrayTransport1);
+
     }
 
-    public static void showDoTransport(List<? super Transport> arrayInput) {
+    public static void showDoTransport(List<?> arrayInput) {
         for (Object t : arrayInput) {
-            if(t instanceof Car){
-                ((Car) t).act();
-            }else if(t instanceof Plane){
-                ((Plane)t).act();
-            }else{
-                System.out.println();
+            if (t instanceof Transport) {
+//                System.out.println(t.getClass());
+                ((Transport) t).act();
             }
         }
     }

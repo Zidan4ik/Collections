@@ -1,13 +1,14 @@
 package task.task2;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Console {
 
     public void doConsole() {
-        List<String> gos_number = new ArrayList<>();
+        List<String> gos_number = new LinkedList<>();
         Scanner scanner = new Scanner(System.in);
 
         String num = "";
