@@ -27,7 +27,7 @@ public class CollectionOfSorts {
     }
 
     public static void mergeSort(int array[]) {//
-        int arr = array.length; //
+        int arr = array.length; //      
         if(arr == 1) return;
         int mid = arr / 2;
 
@@ -72,5 +72,8 @@ public class CollectionOfSorts {
             arr[idx++] = part2[s2];
         }
         System.out.println(Arrays.toString(arr));
+    }
+    public void sort3(){
+
     }
 }
