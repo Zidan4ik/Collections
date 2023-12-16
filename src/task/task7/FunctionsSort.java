@@ -1,9 +1,11 @@
 package task.task7;
 
 
+import org.w3c.dom.ls.LSOutput;
+
 public class FunctionsSort {
     /* ********************************** SORT BY CHOICE *************************** */
-    public static int[] sort1(int[] arr) { //
+    public static int[] sort1(int[] arr) {
         double start = System.nanoTime();
         for (int i = 0; i < arr.length; i++) {
             for (int k = i + 1; k < arr.length; k++) {
@@ -55,12 +57,12 @@ public class FunctionsSort {
     }
 
     /* ********************************** SORT INSERT *************************** */
-    public static void sort5(int[] arr) {
+    public static void sort5(int[] arr) { // 2 5 10| 5 8
         double start = System.nanoTime();
         for (int i = 1; i < arr.length; i++) {
             int currentValue = arr[i];
             int index = i;
-            while (index > 0 && arr[index - 1] > currentValue) {
+            while (index > 0 && arr[index - 1] > currentValue) { //loop for sorted elements
                 arr[index] = arr[index - 1];
                 index--;
             }
@@ -73,7 +75,7 @@ public class FunctionsSort {
     /* ********************************** ANOTHER CODE *************************** */
 
     public static void quickSort(int[] arr, int start, int end) {
-        if (start < end) { //iteration on all elements
+        if (start < end) {
             int divideIndex = findPosition(arr, start, end);
             quickSort(arr, start, divideIndex - 1);
             quickSort(arr, divideIndex, end);
@@ -92,7 +94,7 @@ public class FunctionsSort {
             while (arr[right] > pivot) { // all numbers greater than pivot
                 right--;
             }
-            if (left <= right) {
+            if (left <= right) { // change position elements
                 swap(arr, left, right);
                 left++;
                 right--;
@@ -108,10 +110,11 @@ public class FunctionsSort {
     }
 
 
-    public static void mergeSort(int array[]) {//
-        int arr = array.length; //
+    public static void mergeSort(int array[]) {
+        int arr = array.length;
         if (arr == 1) return;
         int mid = arr / 2;
+
 
         int[] part1 = new int[mid];
         int[] part2 = new int[arr - mid];

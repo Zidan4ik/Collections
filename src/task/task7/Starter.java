@@ -24,7 +24,5 @@ public class Starter {
         sort4(array4); //SORT BUBBLE
         sort5(array5); //SORT INSERT
 
-
-
     }
 }
